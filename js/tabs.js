@@ -1,6 +1,6 @@
 const tabsHandlerElems = document.querySelectorAll('[data-tabs-handler]')
 const tabsContentElems = document.querySelectorAll('[data-tabs-field]')
-
+const tabsTitle = document.querySelectorAll('.design__title')
 
 for(let btn of tabsHandlerElems) {
     btn.addEventListener('click', () => {
@@ -8,7 +8,7 @@ for(let btn of tabsHandlerElems) {
             item.classList.remove('design-list__item_active')
         })
         btn.classList.add('design-list__item_active')
-
+        
         tabsContentElems.forEach(cont => {
             if(cont.dataset.tabsField === btn.dataset.tabsHandler) {
                 cont.classList.remove('hidden')

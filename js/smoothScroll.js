@@ -1,6 +1,7 @@
 const linksHead = document.querySelectorAll('.menu-list__link')
 const mainScroll = document.querySelector('.main__scroll')
-const newArray = [... linksHead, mainScroll]
+const mainButton = document.querySelector('.main__button')
+const newArray = [... linksHead, mainScroll, mainButton]
 
 newArray.forEach( link => {
     link.addEventListener('click', (event) => {
